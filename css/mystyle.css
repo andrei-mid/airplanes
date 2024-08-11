@@ -8,7 +8,7 @@ audio {
     max-width: 100%;
 }
 
-img {
+.top{
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -41,10 +41,30 @@ a {
     text-decoration: none; 
 }
 
-ol li {
-    font-size: 20px;
-    line-height: 1.5; 
+.prima{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.prima li{
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+    text-align: center;
     color: #205375;
+}
+.listmg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.listext{
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 footer {

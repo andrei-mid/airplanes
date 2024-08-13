@@ -1,5 +1,10 @@
+
 body {
-    background-color: #FFD460;
+    background-image: url('../pista.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 audio {
@@ -8,7 +13,13 @@ audio {
     max-width: 100%;
 }
 
-.top{
+#poza1 {
+    border: 5px solid black;
+    border-radius: 150px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.top {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -16,58 +27,93 @@ audio {
 }
 
 hr {
-    background-color: black; 
-    height: 5px; 
-    border: none; 
+    background-color: black;
+    height: 5px;
+    border: none;
 }
 
 h1 {
     text-align: center;
-    color: #2D4059;
+    color: white;
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 60px;
+    margin: 20px 0; 
 }
 
 p {
     font-size: 20px;
-    color: #112B3C;
+    color: white;
 }
 
-a {
+.link1, .link2 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 10px;
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #EA5455;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.prima{
-    padding: 0;
-    margin: 0;
+.link1 {
+    background: #758694;
+    color: #FF9F66;
+}
+
+.link2 {
+    background: #002379;
+    color: #EA5455;
+}
+
+.link1:hover, .link2:hover {
+    background: #EEEEEE;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
     list-style-type: none;
     text-align: center;
+    gap: 20px; 
+    margin: 0; 
 }
 
-.prima li{
-    display: inline-block;
-    margin-right: 3px;
-    vertical-align: top;
+.prima li {
+    flex: 1 1 200px; 
+    box-sizing: border-box; 
     text-align: center;
-    color: #205375;
-}
-.listmg{
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
-.listext{
+.listimg {
+    width: 100%; 
+    height: auto; 
     display: block;
-    margin-top: 5px;
+}
+
+.listext {
+    color: white;
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+#doi {
+    list-style: square;
+    color: white;
     font-size: 20px;
+    display: inline;
+    margin: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px; 
+    color: white;
+}
+
+#plist:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }

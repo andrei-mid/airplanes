@@ -7,13 +7,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-audio {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
 #poza1 {
+    transition: width 3s ease, border 3s ease ;
+    width: 45%;
     border: 5px solid black;
     border-radius: 150px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -43,14 +39,16 @@ h1 {
 
 p {
     font-size: 20px;
+    margin: 15px;
     color: white;
 }
 
 .link1, .link2 {
     display: inline-block;
+    box-sizing: border-box;
     font-weight: bold;
-    padding: 4px;
-    margin: 0 auto;
+    padding: 2px;
+    margin: 15px ;
     margin-top: 10px;
     font-size: 22px;
     text-decoration: none;
@@ -67,6 +65,8 @@ p {
 }
 
 .link1:hover, .link2:hover {
+    border-radius: 7px;
+    border: none;
     background: #EEEEEE;
 }
 
@@ -82,13 +82,16 @@ ol {
 
 .prima li {
     flex: 1 1 200px; 
+    margin: 15px;
     box-sizing: border-box; 
     text-align: center;
 }
 
 .listimg {
-    width: 100%; 
+    border: 3px solid black;
+    max-width: 100%; 
     height: auto; 
+    object-fit: cover;
     display: block;
 }
 
@@ -99,10 +102,11 @@ ol {
 }
 
 #doi {
+    display: block;
     list-style: square;
     color: white;
     font-size: 20px;
-    display: inline;
+    display: 20px;
     margin: 10px;
     margin-bottom: 10px;
 }
@@ -114,6 +118,14 @@ footer {
 }
 
 #plist:hover {
-    transform: scale(1.1);
+    transition-delay: 0.1s;
+    transform: scale(1.05);
     opacity: 0.8;
+    border-radius: 10px;
+}
+#poza1:hover{
+    transition-duration: 5s;
+    width: 90%;
+    border: 0px;
+    transition-delay: 0.5s;
 }
